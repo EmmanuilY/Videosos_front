@@ -4,7 +4,7 @@ import { createStore } from 'vuex'
 export default createStore({
 
   state: () => ({
-        backendUrl: "http://194.226.121.80:8000/api/v1",
+        backendUrl: "http://127.0.0.1:8000/api/v1",
         films: [],
         token: '',
         access: '',

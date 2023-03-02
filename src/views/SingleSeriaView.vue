@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h1> {{seria.name}} </h1>
+  <h1 class = "title_seria"> {{seria.name}} </h1>
 
 <vue-plyr >
   <video
@@ -59,5 +59,10 @@ export default {
 </script>
 
 <style scoped>
-
+.title_seria{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+}
 </style>

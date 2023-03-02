@@ -1,13 +1,21 @@
 <template>
+  <div id="appmount">
   <navbar></navbar>
+
   <div class="app">
+
   <router-view/>
+
     </div>
+  <Footer></Footer>
+    </div>
+
 </template>
 
 <script>
 import axios from "axios";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export default {
   name: "App",
   beforeCreate() {
@@ -44,11 +52,13 @@ export default {
           })
     }
   },
-  components: {Navbar}
+  components: {Navbar, Footer}
 }
 </script>
 <style>
 @import "assets/css/bootstrap.min.css";
 @import "assets/css/product.css";
-
+#appmount{
+  background-color: black;
+}
 </style>
